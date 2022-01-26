@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Dominio.Actividad>
+
+@{
+    ViewBag.Title = "Actividades";
+}
+
+<h2>Actividades</h2>
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+
+@if (Model.Count() > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MinimoEdad)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MaximoEdad)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MinimoEdad)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaximoEdad)
+                </td>
+            </tr>
+        }
+
+    </table>
+}
+else
+{
+    <p> No hay actividades</p>
+}
+
+
+<div>
+    @Html.ActionLink("Volver", "BuscarActividades")
+</div>

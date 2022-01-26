@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Dominio.Pago>
+
+@{
+    ViewBag.Title = "TraerPagos";
+}
+
+<h2>Pagos por fecha</h2>
+
+@if (Model.Count() > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaPago)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Importe)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Tipo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descuento)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Socio.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Socio.Cedula)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaPago)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Importe)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Tipo)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Descuento)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Socio.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Socio.Cedula)
+                </td>
+            </tr>
+        }
+
+    </table>
+}else
+{
+    <p>No hay registros.</p>
+}
+<div>
+    @Html.ActionLink("Volver", "BuscarPagos")
+</div>

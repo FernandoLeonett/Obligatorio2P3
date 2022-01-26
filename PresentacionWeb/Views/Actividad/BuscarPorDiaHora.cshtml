@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "BuscarActividad";
+}
+
+<h2>Buscar actividad por dia y hora</h2>
+
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+
+<form method="post">
+
+    <div class="form-group">
+        <label id="dia"> Dia</label>
+        <input type="text" placeholder="Ingrese un dia" id="dia" name="dia" />
+    </div>
+
+    <div class="form-group">
+        <label id="hora"> Hora</label>
+        <input type="text" placeholder="Ingrese una hora" id="hora" name="hora" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
+
+<br />
+
+<div>
+    @Html.ActionLink("Volver", "BuscarActividades")
+</div>

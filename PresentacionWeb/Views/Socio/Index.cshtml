@@ -1,0 +1,65 @@
+﻿@model IEnumerable<Dominio.Socio>
+
+
+
+@{
+    ViewBag.Title = "Listado de socios";
+}
+
+<h2>Listado de socios</h2>
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+
+@if (Model.Count() > 0)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaNac)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaIngreso)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Cedula)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Nombre)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaNac)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FechaIngreso)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", "Socio", new { cedula = item.Cedula }, new { @class = "text-danger" })
+
+
+                </td>
+            </tr>
+        }
+    </table>
+}
+else
+{
+    <p>No hay socios</p>
+}

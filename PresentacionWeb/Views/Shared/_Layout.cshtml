@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        @if ((String)Session["user"] != null)
+
+                        {
+
+
+
+                            <li>@Html.ActionLink("Actividades de un socio ", "ActividadesSocio", "Actividad")</li>
+
+
+                            <li>@Html.ActionLink("Registrar socio", "Create", "Socio")</li>
+                            <li>@Html.ActionLink("Buscar socio", "BuscarPorCedula", "Socio")</li>
+                            <li>@Html.ActionLink("Listar socios", "Index", "Socio")</li>
+                            <li>@Html.ActionLink("Filtrar pagos", "BuscarPagos", "Pago")</li>
+                            <li>@Html.ActionLink("Buscar actividad", "BuscarActividades", "Actividad")</li>
+                            <li>@Html.ActionLink("Salir", "Salir", "Usuario")</li>
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Importar horarios", "Horarios", "Usuario", new { area = "" }, new { @class = "navbar-brand" })
+                            @Html.ActionLink("Importar usuarios", "Usuarios", "Usuario", new { area = "" }, new { @class = "navbar-brand" })
+                        }
+
+                    </ul>
+                    </div>
+           
+
+                    </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

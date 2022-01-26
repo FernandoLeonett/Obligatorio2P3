@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "BuscarPorCi";
+}
+
+<h2>Buscar socio por cedula</h2>
+
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label id="cedula"> Cedula</label>
+        <input type="text" placeholder="Ingrese la cedula" id="cedula" name="cedula" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
+<br />
+<div>
+    @Html.ActionLink("Volver", "Index")
+</div>

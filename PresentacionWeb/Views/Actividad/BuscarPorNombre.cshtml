@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "BuscarActividad";
+}
+
+<h2>Buscar actividad por nombre</h2>
+
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+
+<form method="post">
+    <div class="form-group">
+        <label id="nombre"> Nombre</label>
+        <input type="text" placeholder="Ingrese un nombre" id="nombre" name="nombre" />
+    </div>
+
+    <button class="btn btn-primary" type="submit">Buscar</button>
+</form>
+<br />
+
+<div>
+    @Html.ActionLink("Volver", "BuscarActividades")
+</div>

@@ -1,0 +1,65 @@
+﻿@model PresentacionWEB.Models.SocioAldia
+
+@{ ViewBag.Title = "Detalle Socio"; }
+
+<h2>Detalles</h2>
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+<div>
+    <h4>Infromacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Socio.Cedula)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Socio.Cedula)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Socio.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Socio.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Socio.FechaNac)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Socio.FechaNac)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Socio.FechaIngreso)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Socio.FechaIngreso)
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Modificar", "Edit", new { cedula = Model.Socio.Cedula }) |
+    @Html.ActionLink("Eliminar", "Delete", new { cedula = Model.Socio.Cedula }) |
+    @Html.ActionLink("Volver al listado de socios", "Index") |
+    @{ if (!Model.Aldia())
+        {
+
+
+
+            @Html.ActionLink("Pagar Mensualidad", "Create", "Pago", new { id = Model.Socio.Id, cedula = Model.Socio.Cedula, nombre = Model.Socio.Nombre, fechaNac = Model.Socio.FechaNac, fechaIngreso = Model.Socio.FechaIngreso }, null);
+        }
+    }
+
+    <div>
+        @Html.ActionLink("Volver", "Index")
+    </div>

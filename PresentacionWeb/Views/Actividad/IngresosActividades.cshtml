@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Dominio.IngresoActividad>
+
+@{
+    ViewBag.Title = "Ingresos";
+}
+
+<h2>Ingresos</h2>
+
+@if (ViewBag.mensaje != null)
+{
+    <div class="alert alert-danger" role="alert">
+        @ViewBag.mensaje
+    </div>
+}
+@if (Model.Count() > 0)
+{
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HorarioActividad.DiaDeSemana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.HorarioActividad.Hora)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Fecha)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioActividad.DiaDeSemana)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HorarioActividad.Hora)
+            </td>
+        </tr>
+    }
+    
+    
+
+</table>
+}
+else
+{
+    <p>No Hay actividades</p>
+}

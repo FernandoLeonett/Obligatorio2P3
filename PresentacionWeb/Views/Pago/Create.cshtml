@@ -1,0 +1,104 @@
+﻿@model Dominio.Socio
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Cedula)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Cedula)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+        </dl>
+
+    </div>
+    <label for="slcTipo">Elija Modalidad</label>
+    <select id="slcTipo" onchange="mostrar()">
+        <option value="-1">
+            seleccione una opcion
+        </option>
+        <option value="PaseLibre">
+            Pase Libre
+        </option>
+        <option value="Cuponera">
+            Cuponera
+        </option>
+    </select>
+    <br />
+    <div id="input-cuponera" style="display:none">
+        <label for="cantidad">Cantidad Cupones</label>
+        <input name="cantidad" type="number" id="cantidad" />
+    </div>
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" onclick="return validarSelecion()"  value="Confirmar" class="btn btn-default" />
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Volver", "Index")
+</div>
+
+<script>
+
+
+
+    function mostrar() {
+        if (document.getElementById('slcTipo').value == "Cuponera") {
+            document.getElementById('input-cuponera').style.display = "block";
+
+
+        } else {
+            document.getElementById('input-cuponera').style.display = "none";
+        }
+
+
+
+
+    }
+
+    function validarSelecion() {
+        if (document.getElementById("slcTipo").value == "-1") {
+
+            alert("Seleccione un Tipo de Mensualidad")
+            return false;
+        }
+
+        if (document.getElementById("slcTipo").value == "Cuponera") {
+            if (document.querySelector('#cantidad').value < 8 || document.querySelector('#cantidad').value > 60) {
+
+                alert("Elija una cantidad de cupones valida")
+                return false;
+
+            }
+
+        } else {
+            return true;
+        }
+    }
+
+
+
+</script>
+
+

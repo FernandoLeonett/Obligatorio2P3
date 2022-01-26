@@ -1,0 +1,10 @@
+Futbol | 10 | 80 | 10:00 | Lunes
+HandBall | 10 | 80  | 12:00 | Martes
+Sala | 10 | 80  | 11:00 | Miercoles
+Yoga | 10 | 80  | 18:00  | Miercoles
+Pilates | 10 | 80  | 18:00 | Jueves
+Cycling | 10 | 80  | 18:00 | Miercoles
+Zumba | 10 | 80  | 18:00 | Miercoles
+Cardio | 10 | 80  | 18:00 | Miercoles
+Boxeo | 10 | 80  | 18:00 | Miercoles
+Natacion | 10 | 80  | 18:00 | Miercoles
