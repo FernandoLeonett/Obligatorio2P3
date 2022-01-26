@@ -13,25 +13,31 @@ namespace Dominio
         public static decimal DescuentoAntiguedad { get; set; }
 
 
+        public PaseLibre(Socio socio):base(socio)
+        {
+            this.Socio = socio;
+
+       
+            Tipo = "PaseLibre";
+            MontoPago();
+
+        }
         public PaseLibre()
         {
-
-
-            Tipo = "PaseLibre";
 
         }
 
 
         public override void MontoPago()
         {
-            Descuento = CuotaFija - Importe;
+         
 
             decimal montoPago = CuotaFija;
             if (this.Socio.CheckAntiguedad())
             {
-                montoPago *= ((100 - DescuentoAntiguedad) / 100);
+                Descuento = montoPago * DescuentoAntiguedad / 100;
             }
-            Importe = montoPago;
+            Importe = montoPago- Descuento;
         }
     }
 }

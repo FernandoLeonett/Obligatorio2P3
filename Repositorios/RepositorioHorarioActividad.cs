@@ -53,7 +53,7 @@ namespace Repositorios
                 return db.Horarios
                     .Where(h => h.DiaDeSemana == dia && h.Hora == hora)
                     .OrderBy(h => h.Actividad.Nombre).ThenBy(h => h.DiaDeSemana).ThenBy(h => h.Hora)
-                    .Select(h => h.Actividad)
+                    .Select(h => h.Actividad).Distinct()
                     .ToList();
             }
         }

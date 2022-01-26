@@ -52,9 +52,9 @@ namespace Repositorios
             using (GestionClubContext db = new GestionClubContext())
             {
                 actividades = db.Horarios
-                    .Where(h => h.Actividad.Nombre.Contains(nombre))
+                    .Where(h => h.Actividad.Nombre.ToLower().Contains(nombre.ToLower()))
                     .OrderBy(h => h.Actividad.Nombre).ThenBy(h => h.DiaDeSemana).ThenBy(h => h.Hora)
-                    .Select(h => h.Actividad)
+                    .Select(h => h.Actividad).Distinct()
                     .ToList();
 
             }
@@ -67,9 +67,11 @@ namespace Repositorios
             using (GestionClubContext db = new GestionClubContext())
             {
                 actividades = db.Horarios
-                    .Where(h => h.Actividad.MinimoEdad <= edad)
+                    .Where(h => h.Actividad.MaximoEdad >= edad && edad>= h.Actividad.MinimoEdad)
                     .OrderBy(h => h.Actividad.Nombre).ThenBy(h => h.DiaDeSemana).ThenBy(h => h.Hora)
-                    .Select(h => h.Actividad)
+                 
+                    .Select(h => h.Actividad).Distinct()
+                  
                     .ToList();
 
             }

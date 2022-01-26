@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
@@ -13,6 +14,9 @@ namespace Dominio
         public int Id { get; set; }
         public Socio Socio { get; set; }
         public HorarioActividad HorarioActividad { get; set; }
+
+       
+       
         public DateTime Fecha { get; set; }
 
         public IngresoActividad(Socio socio, HorarioActividad horarioActividad, DateTime fecha)

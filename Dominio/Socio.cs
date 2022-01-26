@@ -11,7 +11,9 @@ namespace Dominio
     [Table("Socios")]
     public class Socio : IComparable<Socio>
     {
-        [Display(Name = "Cédula")][CedulaValida(ErrorMessage = "La cedula es invalida")]
+        [Display(Name = "Cédula")][CedulaValida(ErrorMessage = "La cedula es invalida")] [Index(IsUnique = true)]
+
+
         public int Cedula { get; set; }
         [Display(Name = "Nombre Completo")][Nombre(ErrorMessage = "El nombre no es valido")]
         public string Nombre { get; set; }

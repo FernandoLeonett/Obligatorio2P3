@@ -17,11 +17,15 @@ namespace Dominio
         public decimal Descuento { get; set; }
     
 
-        public Pago() {
-           
+        public Pago(Socio socio)
+        {
+            this.Socio = socio;
             this.FechaPago = DateTime.Today;
-            MontoPago();
-       
+   
+        }
+        public Pago()
+        {
+
         }
 
         public abstract void MontoPago();

@@ -48,7 +48,7 @@ namespace PresentacionWeb.Controllers
                 try
                 {
                     string url = ConfigurationManager.AppSettings["ApiConexion"];
-                    url += "Actividad/texto/" + nombre;
+                    url += "Actividad/nombre/" + nombre;
                     Uri uri = new Uri(url);
                     HttpClient proxy = new HttpClient();
                     Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
@@ -149,7 +149,7 @@ namespace PresentacionWeb.Controllers
                 try
                 {
                     string url = ConfigurationManager.AppSettings["ApiConexion"];
-                    url += "Actividad/texto/" + dia + "/" + hora;
+                    url += "Actividad/fecha/" + dia + "/" + hora;
                     Uri uri = new Uri(url);
                     HttpClient proxy = new HttpClient();
                     Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
@@ -200,8 +200,27 @@ namespace PresentacionWeb.Controllers
                     if (nombre.Length > 0 && cedula.Length > 0)
                     {
                         int numCedula = Convert.ToInt32(cedula);
-                        List<IngresoActividad> ingresos = Fachada.FiltrarIngresoSocios(numCedula, nombre);
-                        return View("IngresosActividades", ingresos);
+
+                        List<IngresoActividad> ingresos = new List<IngresoActividad>();
+
+
+                        string url = ConfigurationManager.AppSettings["ApiConexion"];
+                        url += "Ingreso/" + cedula + nombre;
+                        Uri uri = new Uri(url);
+                        HttpClient proxy = new HttpClient();
+                        Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
+                        tarea1.Wait();
+                        if (tarea1.Result.IsSuccessStatusCode)
+                        {
+                            Task<string> tarea2 = tarea1.Result.Content.ReadAsStringAsync();
+                            tarea2.Wait();
+                            string json = tarea2.Result;
+                            ingresos = JsonConvert.DeserializeObject<List<IngresoActividad>>(json);
+                        }
+                        else
+                        {
+                            ViewBag.Error = "Hubo un problema al buscar las categorías (" + tarea1.Result.StatusCode + ")";
+                        }
                     }
                 }
                 catch

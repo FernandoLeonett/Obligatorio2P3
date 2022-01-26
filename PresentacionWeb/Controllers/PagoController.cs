@@ -44,13 +44,13 @@ namespace PresentacionWEB.Controllers
                     ViewBag.mensaje = (new DateTime(DateTime.Today.Year, DateTime.Today.Month, 1).AddMonths(1).AddDays(-1)).ToLongDateString();
                     ; if (cantidad == null)
                     {
-                        PaseLibre paseLibre = new PaseLibre { Socio = socio};
+                        PaseLibre paseLibre = new PaseLibre(socio);
                         TempData["PaseLibre"] = paseLibre;
                         return View("ConfirmarPaseLibre", paseLibre);
                     }
                     else
                     {
-                        Cuponera cupo = new Cuponera {  Socio= socio, CantActividad = (int)cantidad };
+                        Cuponera cupo = new Cuponera((int)cantidad, socio);
                         TempData["Cuponera"] = cupo;
                         return View("ConfirmarCuponera", cupo);
                     }

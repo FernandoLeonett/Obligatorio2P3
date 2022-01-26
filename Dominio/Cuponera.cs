@@ -13,26 +13,38 @@ namespace Dominio
         public static int CantActprefijaDto { get; set; }
         public static decimal DescuentoCuponera { get; set; }
 
-     
+
+
+        public Cuponera(int cantidad, Socio socio):base(socio)
+        {
+            this.Socio = socio;
+            this.CantActividad = cantidad;
+            MontoPago();
+
+            Tipo = "Cuponera";
+         
+
+
+        }
 
         public Cuponera()
         {
-       
-            Tipo = "Cuponera";
 
-           
         }
 
         public override void MontoPago()
         {
 
-            Descuento = (this.CantActividad * MontoUnitarioActividad) - Importe;
             decimal montoPago = CantActividad * MontoUnitarioActividad;
             if (CantActividad > CantActprefijaDto)
+
+
             {
-                montoPago *= ((100 - DescuentoCuponera) / 100);
+                Descuento = montoPago * DescuentoCuponera / 100;
+
+       
             }
-            Importe = montoPago;
+            Importe = montoPago -Descuento;
         }
 
     }

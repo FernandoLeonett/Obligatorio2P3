@@ -12,10 +12,7 @@ namespace WepApi.Controllers
     public class IngresoController : ApiController
     {
         // GET: api/Ingreso
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
+     
 
         [Route("api/Ingreso/{cedula}/{nombreAct}")]
         public IHttpActionResult Get(int cedula, string nombreAct)
@@ -24,19 +21,6 @@ namespace WepApi.Controllers
             return Ok(ingresos);
         }
 
-        // POST: api/Ingreso
-        public void Post([FromBody]string value)
-        {
-        }
 
-        // PUT: api/Ingreso/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
-
-        // DELETE: api/Ingreso/5
-        public void Delete(int id)
-        {
-        }
     }
 }
