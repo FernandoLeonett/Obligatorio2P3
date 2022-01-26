@@ -1,0 +1,99 @@
+insert into Socios values
+(123451,'Carlos Perez','22-11-1987',GETDATE(),1),
+(123452,'Jose Perez','22-11-1987',GETDATE(),1),
+(123453,'Maria Perez','22-11-1987',GETDATE(),1),
+(123454,'Brenda Perez','22-11-1987',GETDATE(),1),
+(123455,'Jacinto Perez','22-11-1987',GETDATE(),1),
+(123456,'Matias Perez','22-11-1987',GETDATE(),1),
+(123457,'Fernando Perez','22-11-1987',GETDATE(),1),
+(123458,'Jose Perez','22-11-1987',GETDATE(),1),
+(123459,'Pablo Perez','22-11-1987',GETDATE(),1),
+(123450,'Ricardo Perez','22-11-1987',GETDATE(),1)
+select * from Socios
+
+select * from Actividades
+insert into Actividades values
+('Futbol',10,50),
+('Ajedrez',12,70),
+('Natacion',5,60),
+('Yoga',18,70),
+('Maraton',15,60),
+('Baile',10,50),
+('Futbol Sala',10,50)
+insert into Socios values
+(123451,'Carlos Perez','22-11-1987',GETDATE(),1),
+(123452,'Jose Perez','22-11-1987',GETDATE(),1),
+(123453,'Maria Perez','22-11-1987',GETDATE(),1),
+(123454,'Brenda Perez','22-11-1987',GETDATE(),1),
+(123455,'Jacinto Perez','22-11-1987',GETDATE(),1),
+(123456,'Matias Perez','22-11-1987',GETDATE(),1),
+(123457,'Fernando Perez','22-11-1987',GETDATE(),1),
+(123458,'Jose Perez','22-11-1987',GETDATE(),1),
+(123459,'Pablo Perez','22-11-1987',GETDATE(),1),
+(123450,'Ricardo Perez','22-11-1987',GETDATE(),1),
+(123450,'Juan Perez','22-11-1987','11-12-1990',1)
+
+select * from Socios
+
+insert into socios values (123433,'Juan Perez','22-11-1987','11-12-1990',1)
+
+insert into Actividades values
+('Futbol',10,50),
+('Ajedrez',12,70),
+('Natacion',5,60),
+('Yoga',18,70),
+('Maraton',15,60),
+('Baile',10,50),
+('Futbol Sala',10,50)
+
+select * from Actividades
+
+
+
+insert into Horarios values
+('Lunes',10,1),
+('Martes',12,2),
+('Miercoles',5,3),
+('Jueves',18,4),
+('Viernes',15,5),
+('Lunes',10,6),
+('Miercoles',10,7)
+
+select * from Horarios
+
+
+
+
+insert into Ingresos values
+('11-12-2021',1,1),
+('12-12-2021',2,1),
+('13-12-2021',3,1),
+('15-12-2021',4,1),
+('14-12-2021',5,1),
+('16-12-2021',6,1),
+('17-12-2021',7,1),
+('22-12-2021',2,3),
+('5-12-2021',1,3),
+('1-12-2021',3,3),
+('21-12-2021',4,3)
+select * from Ingresos
+
+
+select * from parametros
+
+
+select * from Ingresos
+
+insert into Ingresos values
+('11-12-2021',1,1),
+('12-12-2021',2,1),
+('13-12-2021',3,1),
+('15-12-2021',4,1),
+('14-12-2021',5,1),
+('16-12-2021',6,1),
+('17-12-2021',7,1),
+('22-12-2021',2,3),
+('5-12-2021',1,3),
+('1-12-2021',3,3),
+('21-12-2021',4,3)
+select * from Ingresos
