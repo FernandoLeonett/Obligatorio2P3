@@ -748,7 +748,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\P
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.pdb
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.csproj.CopyComplete
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\bin\PresentacionWeb.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\bin\PresentacionWeb.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\bin\PresentacionWeb.pdb
@@ -856,6 +855,7 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\bin\es\System.Web.WebPages.Razor.resources.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\PresentacionWeb\obj\Debug\PresentacionWeb.pdb

@@ -48,7 +48,7 @@ namespace Auxiliar
 
         public static bool Precargas()
         {
-            return repoPrecasr.CargarTopes();
+            return repoPrecasr.Precarga();
         }
 
         public static bool AltaHorario(HorarioActividad h)

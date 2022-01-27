@@ -103,7 +103,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\Co
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.csproj.CopyComplete
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.pdb
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\bin\Debug\ContextoEntity.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\bin\Debug\ContextoEntity.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\bin\Debug\ContextoEntity.pdb
@@ -115,6 +114,7 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\bin\Debug\EntityFramework.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\ContextoEntity\obj\Debug\ContextoEntity.pdb

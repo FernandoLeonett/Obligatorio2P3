@@ -131,8 +131,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.CopyComplete
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.pdb
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.AssemblyReference.cache
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Auxiliar.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Auxiliar.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Auxiliar.pdb
@@ -147,6 +145,8 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\De
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\EntityFramework.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\ContextoEntity.pdb
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\ContextoEntity.dll.config
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.pdb

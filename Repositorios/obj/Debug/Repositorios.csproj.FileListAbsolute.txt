@@ -123,7 +123,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repo
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.pdb
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bin\Debug\Repositorios.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bin\Debug\Repositorios.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bin\Debug\Repositorios.pdb
@@ -138,6 +137,7 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bi
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bin\Debug\EntityFramework.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Repositorios\obj\Debug\Repositorios.pdb

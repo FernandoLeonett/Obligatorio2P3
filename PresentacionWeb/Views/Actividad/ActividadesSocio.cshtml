@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Dominio.Actividad>
+﻿
 
 @{
     ViewBag.Title = "Actividades Socio";
@@ -6,12 +6,13 @@
 
 <h2>Actividades Socio</h2>
 
-@if (ViewBag.mensaje != null)
-{
-    <div class="alert alert-danger" role="alert">
-        @ViewBag.mensaje
-    </div>
-}
+
+<div class="alert alert-danger" role="alert">
+    @ViewBag.Error
+    @ViewBag.mensaje
+
+</div>
+
 
 <form action="ActividadesSocio" method="post">
     <div class="form-group">

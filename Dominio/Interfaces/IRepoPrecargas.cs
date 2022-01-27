@@ -8,6 +8,6 @@ namespace Dominio.Interfaces
 {
     public interface IRepoPrecargas
     {
-        bool CargarTopes();
+        bool Precarga();
     }
 }

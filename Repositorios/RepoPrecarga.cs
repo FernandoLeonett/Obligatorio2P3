@@ -18,7 +18,7 @@ namespace Repositorios
     public class RepoPrecarga : IRepoPrecargas
     {
 
-        public bool CargarTopes()
+        public bool Precarga()
         {
             bool ok = false;
             using (GestionClubContext db = new GestionClubContext())
@@ -39,12 +39,12 @@ namespace Repositorios
                     p = new Parametros(5000, 3, 30, 300, 20, 40);
                     db.Parametros.Add(p);
                     db.SaveChanges();
-                    PrecargaDatos();
+                    DatosPrueba();
                 }
             }
             return ok;
         }
-        private bool PrecargaDatos()
+        private bool DatosPrueba()
         {
 
             bool ok = false;

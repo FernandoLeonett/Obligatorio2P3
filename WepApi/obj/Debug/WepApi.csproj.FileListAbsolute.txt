@@ -644,8 +644,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csp
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.CopyComplete
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.pdb
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.AssemblyReference.cache
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\WepApi.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\WepApi.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\WepApi.pdb
@@ -752,6 +750,8 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\es\S
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\es\System.Web.WebPages.resources.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\es\System.Web.WebPages.Deployment.resources.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\WepApi\obj\Debug\WepApi.pdb

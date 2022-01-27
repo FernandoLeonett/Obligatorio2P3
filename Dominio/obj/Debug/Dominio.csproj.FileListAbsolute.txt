@@ -79,8 +79,6 @@ C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.c
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.dll
 C:\Users\csb16\Desktop\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.pdb
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
-C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\Dominio.dll.config
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\Dominio.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\Dominio.pdb
@@ -88,6 +86,8 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Deb
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\EntityFramework.xml
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.AssemblyReference.cache
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.CoreCompileInputs.cache
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Dominio\obj\Debug\Dominio.pdb
