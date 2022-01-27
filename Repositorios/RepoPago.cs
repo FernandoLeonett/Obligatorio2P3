@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContextoEntity;
 using Dominio;
 using Dominio.Interfaces;
-using ContextoEntity;
+using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 
 namespace Repositorios
@@ -37,31 +35,7 @@ namespace Repositorios
         }
 
 
-        public bool CargarTopes()
-        {
-            bool ok = false;
-            using (GestionClubContext db = new GestionClubContext())
-            {
-                Parametros p = new Parametros();
-                if (db.Parametros.Count() != 0)
-                {
-                    p = db.Parametros.FirstOrDefault();
-                    PaseLibre.CuotaFija = p.MensualidadCuotaFija;
-                    Socio.AntiguedadDto = p.AntiguedadRequeridadParaDctoMensualidad;
-                    PaseLibre.DescuentoAntiguedad = p.DescuentoXAntiguedad;
-                    Cuponera.MontoUnitarioActividad = p.ImporteoUnitarioXAactividdad;
-                    Cuponera.CantActprefijaDto = p.TopeActiviadesDcto;
-                    Cuponera.DescuentoCuponera = p.DtoXActividadesTope;
-                }
-                else
-                {
-                    p = new Parametros(5000, 3, 30, 300, 20, 40);
-                    db.Parametros.Add(p);
-                    db.SaveChanges();
-                }
-            }
-            return ok;
-        }
+        
 
         public bool Modificacion(Pago obj)
         {
@@ -80,7 +54,7 @@ namespace Repositorios
             {
                 pagos = db.Pagos
                     .Include(p => p.Socio)
-                    .Where(p => p.FechaPago.Month == mes && p.FechaPago.Year == anio).ToList();                                
+                    .Where(p => p.FechaPago.Month == mes && p.FechaPago.Year == anio).ToList();
             }
             return pagos;
         }

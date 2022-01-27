@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
-using System.Web.Http;
+﻿using Auxiliar;
 using Dominio;
-using Auxiliar;
+using System.Collections.Generic;
+using System.Web.Http;
 
 namespace WepApi.Controllers
 {
@@ -14,7 +10,7 @@ namespace WepApi.Controllers
 
 
 
-        
+
         [Route("api/Actividad/nombre/{nombre}")]
         public IHttpActionResult Get(string nombre)
         {
@@ -36,7 +32,7 @@ namespace WepApi.Controllers
             return Ok(actividades);
         }
 
-      
+
 
     }
 }

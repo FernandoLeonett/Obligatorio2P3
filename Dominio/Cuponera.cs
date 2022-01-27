@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Dominio
+﻿namespace Dominio
 {
     public class Cuponera : Pago
     {
@@ -15,14 +9,14 @@ namespace Dominio
 
 
 
-        public Cuponera(int cantidad, Socio socio):base(socio)
+        public Cuponera(int cantidad, Socio socio) : base(socio)
         {
             this.Socio = socio;
             this.CantActividad = cantidad;
             MontoPago();
 
             Tipo = "Cuponera";
-         
+
 
 
         }
@@ -42,9 +36,9 @@ namespace Dominio
             {
                 Descuento = montoPago * DescuentoCuponera / 100;
 
-       
+
             }
-            Importe = montoPago -Descuento;
+            Importe = montoPago - Descuento;
         }
 
     }

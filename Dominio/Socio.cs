@@ -1,21 +1,20 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Dominio
 {
     [Table("Socios")]
     public class Socio : IComparable<Socio>
     {
-        [Display(Name = "Cédula")][CedulaValida(ErrorMessage = "La cedula es invalida")] [Index(IsUnique = true)]
+        [Display(Name = "Cédula")]
+        [CedulaValida(ErrorMessage = "La cedula es invalida")]
+        [Index(IsUnique = true)]
 
 
         public int Cedula { get; set; }
-        [Display(Name = "Nombre Completo")][Nombre(ErrorMessage = "El nombre no es valido")]
+        [Display(Name = "Nombre Completo")]
+        [Nombre(ErrorMessage = "El nombre no es valido")]
         public string Nombre { get; set; }
         public int Id { get; set; }
         [Required]

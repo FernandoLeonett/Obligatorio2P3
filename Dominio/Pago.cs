@@ -1,6 +1,6 @@
 ﻿using System;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dominio
 {
@@ -15,13 +15,13 @@ namespace Dominio
         [NotMapped]
         public string Tipo { get; set; }
         public decimal Descuento { get; set; }
-    
+
 
         public Pago(Socio socio)
         {
             this.Socio = socio;
             this.FechaPago = DateTime.Today;
-   
+
         }
         public Pago()
         {
@@ -29,6 +29,6 @@ namespace Dominio
         }
 
         public abstract void MontoPago();
-   
+
     }
 }

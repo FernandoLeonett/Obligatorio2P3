@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dominio;
-using Dominio.Interfaces;
+﻿using Dominio.Interfaces;
 using Repositorios;
 
 namespace Auxiliar
@@ -34,6 +28,11 @@ namespace Auxiliar
         public static IrepoHorario ObtenerRepoHorario()
         {
             return new RepositorioHorarioActividad();
+        }
+
+        public static IRepoPrecargas ObtenerRepoPrecarga()
+        {
+            return new RepoPrecarga();
         }
     }
 }

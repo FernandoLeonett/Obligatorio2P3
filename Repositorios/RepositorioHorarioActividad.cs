@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContextoEntity;
 using Dominio;
 using Dominio.Interfaces;
-using ContextoEntity;
+using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
 
 namespace Repositorios
 {
@@ -28,7 +26,7 @@ namespace Repositorios
                     }
                     obj.Actividad = actividad;
                     HorarioActividad repetido = db.Horarios.SingleOrDefault(h => h.Actividad.Nombre == obj.Actividad.Nombre && h.DiaDeSemana == obj.DiaDeSemana && obj.Hora == h.Hora);
-                    
+
                     if (repetido == null)
                     {
                         db.Horarios.Add(obj);

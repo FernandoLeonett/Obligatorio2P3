@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContextoEntity;
 using Dominio;
 using Dominio.Interfaces;
-using ContextoEntity;
-using System.Data.Entity;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 
 namespace Repositorios
@@ -67,11 +64,11 @@ namespace Repositorios
             using (GestionClubContext db = new GestionClubContext())
             {
                 actividades = db.Horarios
-                    .Where(h => h.Actividad.MaximoEdad >= edad && edad>= h.Actividad.MinimoEdad)
+                    .Where(h => h.Actividad.MaximoEdad >= edad && edad >= h.Actividad.MinimoEdad)
                     .OrderBy(h => h.Actividad.Nombre).ThenBy(h => h.DiaDeSemana).ThenBy(h => h.Hora)
-                 
+
                     .Select(h => h.Actividad).Distinct()
-                  
+
                     .ToList();
 
             }

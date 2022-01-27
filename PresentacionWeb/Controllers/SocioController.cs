@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-using Auxiliar;
+﻿using Auxiliar;
 using Dominio;
 using PresentacionWEB.Models;
+using System.Collections.Generic;
+using System.Web.Mvc;
 
 namespace PresentacionWeb.Controllers
 {
@@ -74,8 +71,9 @@ namespace PresentacionWeb.Controllers
             string mensaje = "No se pudo dar de alta el socio";
             try
             {
-                if (ModelState.IsValid) { 
-              
+                if (ModelState.IsValid)
+                {
+
                     if (Fachada.RegistrarSocio(socio.Cedula, socio.Nombre, socio.FechaNac))
                     {
                         mensaje = "Alta de socio Exitosa";
@@ -147,7 +145,7 @@ namespace PresentacionWeb.Controllers
         {
             if (Session["user"] != null)
             {
-                if(cedula != null)
+                if (cedula != null)
                 {
                     return RedirectToAction("Details", "Socio", new { cedula });
 

@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContextoEntity;
 using Dominio;
 using Dominio.Interfaces;
-using ContextoEntity;
+using System;
+using System.Collections.Generic;
 using System.Data.Entity;
+using System.Linq;
+
 
 namespace Repositorios
 {
@@ -55,7 +54,7 @@ namespace Repositorios
         public List<IngresoActividad> FiltrarIngresoSocios(int cedula, string nombreAct)
         {
             List<IngresoActividad> ingresos = new List<IngresoActividad>();
-            using(GestionClubContext db = new GestionClubContext())
+            using (GestionClubContext db = new GestionClubContext())
             {
                 ingresos = db.Ingresos
                     .Include(i => i.Socio)
@@ -66,5 +65,8 @@ namespace Repositorios
             }
             return ingresos;
         }
+
+
+       
     }
 }

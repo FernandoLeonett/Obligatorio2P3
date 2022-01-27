@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Dominio
+﻿namespace Dominio
 {
     public class PaseLibre : Pago
     {
@@ -13,11 +7,11 @@ namespace Dominio
         public static decimal DescuentoAntiguedad { get; set; }
 
 
-        public PaseLibre(Socio socio):base(socio)
+        public PaseLibre(Socio socio) : base(socio)
         {
             this.Socio = socio;
 
-       
+
             Tipo = "PaseLibre";
             MontoPago();
 
@@ -30,14 +24,14 @@ namespace Dominio
 
         public override void MontoPago()
         {
-         
+
 
             decimal montoPago = CuotaFija;
             if (this.Socio.CheckAntiguedad())
             {
                 Descuento = montoPago * DescuentoAntiguedad / 100;
             }
-            Importe = montoPago- Descuento;
+            Importe = montoPago - Descuento;
         }
     }
 }

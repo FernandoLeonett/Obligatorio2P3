@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.ComponentModel.DataAnnotations;
 
 namespace Dominio
 {
@@ -15,8 +10,8 @@ namespace Dominio
         public Socio Socio { get; set; }
         public HorarioActividad HorarioActividad { get; set; }
 
-       
-       
+
+
         public DateTime Fecha { get; set; }
 
         public IngresoActividad(Socio socio, HorarioActividad horarioActividad, DateTime fecha)

@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ContextoEntity;
 using Dominio;
 using Dominio.Interfaces;
+using System.Collections.Generic;
 using System.Data.Entity;
-using ContextoEntity;
+using System.Linq;
 
 namespace Repositorios
 {

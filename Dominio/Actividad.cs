@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Dominio
@@ -17,7 +12,7 @@ namespace Dominio
         public string Nombre { get; set; }
         public int MinimoEdad { get; set; }
         public int MaximoEdad { get; set; }
-     
+
         public Actividad(string nombre, int minimoEdad, int maximoEdad)
         {
             this.Nombre = nombre;

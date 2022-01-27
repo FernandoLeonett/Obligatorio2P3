@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Auxiliar;
+using Dominio;
+using System;
+using System.IO;
 using System.Web;
 using System.Web.Mvc;
-using Dominio;
-using Auxiliar;
-using System.IO;
 
 namespace PresentacionWeb.Controllers
 {
@@ -36,7 +34,7 @@ namespace PresentacionWeb.Controllers
                 if (unUsuario == null)
                 {
                     ViewBag.Mensaje = "Usuario y/o contraseña incorrectas";
-                    
+
                 }
                 else
                 {

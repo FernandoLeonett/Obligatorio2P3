@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Dominio;
+﻿using Dominio;
 using Dominio.Interfaces;
+using System;
+using System.Collections.Generic;
 
 namespace Auxiliar
 {
     public static class Fachada
     {
+
+        private static IRepoPrecargas repoPrecasr = Fabrica.ObtenerRepoPrecarga();
         private static IRepoSocio repoSocio = Fabrica.ObtenerRepositorioSocio();
         private static IRepoPago repoPago = Fabrica.ObtenerRepositorioPago();
         private static IRepoIngresoActividad repoIngreso = Fabrica.ObtenerRepoIngresoActiviad();
@@ -45,9 +46,9 @@ namespace Auxiliar
             return ok;
         }
 
-        public static bool TraerTopesBenficios()
+        public static bool Precargas()
         {
-            return repoPago.CargarTopes();
+            return repoPrecasr.CargarTopes();
         }
 
         public static bool AltaHorario(HorarioActividad h)
@@ -217,5 +218,7 @@ namespace Auxiliar
         {
             return repoIngreso.ContadorDeIngresoActividad(fecha, hora);
         }
+
+     
     }
 }

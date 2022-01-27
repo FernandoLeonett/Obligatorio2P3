@@ -56,6 +56,7 @@
     <Compile Include="Cuponera.cs" />
     <Compile Include="HorarioActividad.cs" />
     <Compile Include="IngresoActividad.cs" />
+    <Compile Include="Interfaces\IRepoPrecargas.cs" />
     <Compile Include="Interfaces\IRepoActividad.cs" />
     <Compile Include="Interfaces\IrepoHorario.cs" />
     <Compile Include="Interfaces\IRepoIngresoActividad.cs" />

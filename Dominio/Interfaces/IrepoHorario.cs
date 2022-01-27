@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Dominio;
+﻿using System.Collections.Generic;
 
 namespace Dominio.Interfaces
 {
-   public interface IrepoHorario:IRepositorio<HorarioActividad>
+    public interface IrepoHorario : IRepositorio<HorarioActividad>
     {
         List<Actividad> TraerActividadesPorFecha(string dia, int hora);
     }
