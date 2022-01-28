@@ -135,6 +135,7 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\De
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Auxiliar.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Auxiliar.pdb
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Dominio.dll
+C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Microsoft.Web.Infrastructure.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\Repositorios.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\EntityFramework.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\bin\Debug\ContextoEntity.dll

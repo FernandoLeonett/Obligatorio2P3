@@ -2,6 +2,9 @@
 using Dominio;
 using System.Collections.Generic;
 using System.Web.Http;
+using System.Linq;
+
+
 
 namespace WepApi.Controllers
 {
@@ -9,7 +12,16 @@ namespace WepApi.Controllers
     {
 
 
+        public IHttpActionResult Get()
+        {
 
+          var actividades = Fachada.TraerActividades().Select(a =>  new  { Text = a.Nombre, Value = a.ID });
+            
+
+
+
+            return Ok(actividades);
+        }
 
         [Route("api/Actividad/nombre/{nombre}")]
         public IHttpActionResult Get(string nombre)

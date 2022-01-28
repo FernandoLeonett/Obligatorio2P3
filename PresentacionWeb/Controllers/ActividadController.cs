@@ -6,6 +6,8 @@ using System.Configuration;
 using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Mvc;
+using PresentacionWeb.Models;
+
 
 namespace PresentacionWeb.Controllers
 {
@@ -179,7 +181,46 @@ namespace PresentacionWeb.Controllers
         {
             if (Session["user"] != null)
             {
-                return View();
+
+               List<ActiDto> items = null;
+                string url = ConfigurationManager.AppSettings["ApiConexion"];
+                url += "Actividad";
+                Uri uri = new Uri(url);
+                HttpClient proxy = new HttpClient();
+                Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
+                tarea1.Wait();
+                if (tarea1.Result.IsSuccessStatusCode)
+                {
+                    Task<string> tarea2 = tarea1.Result.Content.ReadAsStringAsync();
+                    tarea2.Wait();
+                    string json = tarea2.Result;
+
+
+                items= JsonConvert.DeserializeObject<List<ActiDto>>(json);
+           
+
+                }
+                List<SelectListItem> lista = items.ConvertAll(a =>
+                {
+                    return new SelectListItem()
+                    {
+                        Text = a.Text,
+                        Value = a.Text,
+                        Selected = false
+                    };
+                });
+
+                ModelIngreso model = new ModelIngreso
+                {
+                    Actividades = lista
+                };
+
+
+
+
+
+
+                return View(model);
             }
             else
             {
@@ -188,43 +229,44 @@ namespace PresentacionWeb.Controllers
         }
 
         [HttpPost]
-        public ActionResult ActividadesSocio(string cedula, string nombre)
+        public ActionResult ActividadesSocio( string cedula, string  nombre)
         {
             if (Session["user"] != null)
             {
+                List<IngresoActividad> ingresos = new List<IngresoActividad>();
                 try
                 {
                     if (nombre.Length > 0 && cedula.Length > 0)
                     {
-                        int numCedula = Convert.ToInt32(cedula);
+                 
 
-                        List<IngresoActividad> ingresos = new List<IngresoActividad>();
-
+                   
+                       
 
                         string url = ConfigurationManager.AppSettings["ApiConexion"];
-                        url += "Ingreso/" + cedula + nombre;
+                        url += "Ingreso/" + cedula +"/"+ nombre;
                         Uri uri = new Uri(url);
                         HttpClient proxy = new HttpClient();
-                        Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
-                        tarea1.Wait();
-                        if (tarea1.Result.IsSuccessStatusCode)
-                        {
-                            Task<string> tarea2 = tarea1.Result.Content.ReadAsStringAsync();
-                            tarea2.Wait();
-                            string json = tarea2.Result;
+                    Task<HttpResponseMessage> tarea1 = proxy.GetAsync(uri);
+                    tarea1.Wait();
+                    if (tarea1.Result.IsSuccessStatusCode)
+                    {
+                        Task<string> tarea2 = tarea1.Result.Content.ReadAsStringAsync();
+                        tarea2.Wait();
+                        string json = tarea2.Result;
                             ingresos = JsonConvert.DeserializeObject<List<IngresoActividad>>(json);
                         }
-                        else
-                        {
-                            ViewBag.Error = "Hubo un problema al buscar las categorías (" + tarea1.Result.StatusCode + ")";
-                        }
+                    else
+                    {
+                        ViewBag.Error = "Hubo un problema al buscar las categorías (" + tarea1.Result.StatusCode + ")";
                     }
+                }
                 }
                 catch
                 {
                     ViewBag.mensaje = "Error en los datos";
                 }
-                return View();
+                return View("IngresosActividades", ingresos);
             }
             else
             {

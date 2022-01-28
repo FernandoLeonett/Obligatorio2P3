@@ -3,6 +3,7 @@ using Dominio.Interfaces;
 using System;
 using System.Collections.Generic;
 
+
 namespace Auxiliar
 {
     public static class Fachada
@@ -218,6 +219,8 @@ namespace Auxiliar
         {
             return repoIngreso.ContadorDeIngresoActividad(fecha, hora);
         }
+
+  
 
      
     }
