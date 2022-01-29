@@ -14,14 +14,38 @@
 
 <form action="TraerPagos" method="post">
     <div class="form-group">
-        <label id="mes"> Mes</label>
-        <input type="text" placeholder="Ingrese un mes" id="mes" name="mes" />
-    </div>
+        <label for="mes"> Mes</label>
+        <select class="form-select" name="mes" aria-label="Default select example">
+            <option value="-1">Elija el Mes</option>
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10">Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
 
-    <div class="form-group">
-        <label id="anio"> Anio</label>
-        <input type="text" placeholder="Ingrese un anio" id="anio" name="anio" />
-    </div>
+    
+    </div>      
+  
+
+<div class="form-group">
+    <label for="anio"> Anio</label> 
+    <select class="form-select" name="anio" aria-label="Default select example">
+        <option value="-1">Elija el anio</option>
+        @for (var i = 2010;i<= DateTime.Today.Year;i++)
+        {
+        <option id="@i">@i</option>
+        }
+    </select>
+
+</div>
 
 
     <button class="btn btn-primary" type="submit">Buscar</button>

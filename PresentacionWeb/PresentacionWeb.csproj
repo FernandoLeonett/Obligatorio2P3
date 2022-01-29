@@ -223,7 +223,6 @@
     <Content Include="Views\Actividad\ResultadoBuscado.cshtml" />
     <Content Include="Views\Pago\TraerPagos.cshtml" />
     <Content Include="Views\Actividad\BuscarActividades.cshtml" />
-    <Content Include="Views\Actividad\ActividadesSocioOld.cshtml" />
     <Content Include="Views\Actividad\IngresosActividades.cshtml" />
     <Content Include="Views\Socio\Delete.cshtml" />
     <None Include="Views\Actividad\ActividadesSocio.cshtml" />
