@@ -151,3 +151,4 @@ C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\De
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.csproj.CopyComplete
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.dll
 C:\Users\ferna\OneDrive\Escritorio\Obligatorio2P3\Obligatorio2P3\Auxiliar\obj\Debug\Auxiliar.pdb
+C:\Users\ferna\source\repos\Obligatorio2P3\Auxiliar\bin\Debug\Microsoft.Web.Infrastructure.dll
